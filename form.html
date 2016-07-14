@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Example</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="form.js"></script>
+
+
+</head>
+
+<body>
+
+<form id="my form">
+
+<fieldset>
+	<label>
+		Name:
+	</label>
+	<input type="text" id="user-name">
+</fieldset>
+
+<fieldset>
+	<label>
+		Email:
+	</label>
+	<input type="email" id="user-email">
+</fieldset>
+
+<fieldset>
+	<label>
+		Happy?
+	</label>
+	<input type="checkbox" id="user-happy">
+</fieldset>
+
+<fieldset>
+	<label>
+		Country:
+	</label>
+	<select id="user-country">
+		<option value="us">USA</option>
+		<option value="ca">Canada</option>
+		<option value="mx">Mexico</option>
+	</select>
+</fieldset>
+
+<fieldset>
+	<button id="form-submit">Submit</button>
+</fieldset>
+
+</form>
+
+<div id="summary">
+	<p>
+	Your name is <span id="name-result"></span>. Your email address is <span id="email-result"></span>. Your <span id="happy-result"></span> happy. And you live in <span id="country-result"></span>.
+	</p>
+</div>
+
+</body>
+</html>
