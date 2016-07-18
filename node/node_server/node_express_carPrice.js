@@ -20,7 +20,7 @@ app.get("/set_price", function(req, res){
 });
 
 app.get("/retrieve_price", function(req, res){
-    res.send("The car price is: " + carPrice);
+    res.send("If you are a: " + carPrice);
 });
 
 app.listen(3000, function () {
