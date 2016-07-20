@@ -1,0 +1,65 @@
+body
+{
+	font: 13px;
+	font-family: helvetica;, Arial, sans-serif;
+	background-color: #CCC;
+}
+
+#chat-log
+{
+	background-color: #FFF;
+	margin: 5px;
+	border: solid 2px #000;
+	position: fixed;
+	top: 30px;
+	bottom: 90px;
+	width: 95%;
+	overflow-y: scroll;
+}
+
+#chat-log ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#chat-log ul li
+{
+	padding: 5px 10px;
+}
+
+
+#chat-log ul li.them-line
+{
+	background-color: #CCC;
+}
+
+form
+{
+	background-color: #CCC;
+	position: fixed;
+	bottom: 5px;
+	left: 5px;
+	right: 2px;
+	padding: 8;
+	height: 30px;
+}
+
+form #chat-input
+{
+	border: solid 2px #000;
+	padding: 10px;
+	width: 85%;
+	margin-right: .5%;
+}
+
+form button
+{
+	width: 12%;
+	background-image: 
+	padding: 10px;
+}.console-line {
+  font-family: monospace;
+  margin: 2px;
+}
