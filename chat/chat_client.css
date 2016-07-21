@@ -2,14 +2,14 @@ body
 {
 	font: 13px;
 	font-family: helvetica;, Arial, sans-serif;
-	background-color: #CCC;
+	background-color: #FAEBD7;
 }
 
 #chat-log
 {
-	background-color: #FFF;
+	background-color: #FFF5EE;
 	margin: 5px;
-	border: solid 2px #000;
+	border: solid 2px #E2A76F;
 	position: fixed;
 	top: 30px;
 	bottom: 90px;
@@ -32,12 +32,12 @@ body
 
 #chat-log ul li.them-line
 {
-	background-color: #CCC;
+	background-color: #FAEBD7;
 }
 
 form
 {
-	background-color: #CCC;
+	background-color: #FAEBD7;
 	position: fixed;
 	bottom: 5px;
 	left: 5px;
@@ -48,18 +48,26 @@ form
 
 form #chat-input
 {
-	border: solid 2px #000;
+	border: solid 2px #E2A76F;
 	padding: 10px;
 	width: 85%;
 	margin-right: .5%;
 }
 
+.box{
+	background-image: url("http://orig03.deviantart.net/ec57/f/2013/148/7/0/sailor_moon_crystal_brooch_icon_by_meinona-d66vo9z.gif");
+	background-repeat: repeat-y;
+	float: right;
+	height: 50px;
+	width: 50px;
+
+}
+
 form button
 {
-	width: 12%;
-	background-image: 
+	width: 12%; 
 	padding: 10px;
 }.console-line {
-  font-family: monospace;
-  margin: 2px;
+  	font-family: monospace;
+  	
 }
