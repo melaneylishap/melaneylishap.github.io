@@ -1,4 +1,23 @@
 body
+/*reset*/ h1,h4 {margin:0;}
+
+/* basic styles */
+h1 { margin-bottom: 10px; }
+div { 
+  width: 680px;
+  padding: 10px 25px;
+  margin: 50px auto;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.4); 
+  color: #1F1F1F;
+}
+
+/* backgrounds */
+.day { background: url('http://www.spaceweather.com/swpod2007/21oct07/holloway.gif'); }
+.sunset { background: url('http://www.spaceweather.com/swpod2007/21oct07/holloway.gif'); }
+.night { background: url('http://www.spaceweather.com/swpod2007/21oct07/holloway.gif'); }
+
+
 {
 	font: 13px;
 	font-family: helvetica;, Arial, sans-serif;
@@ -7,9 +26,9 @@ body
 
 #chat-log
 {
-	background-color: #F660AB;
+	background-color: #FFF5EE;
 	margin: 5px;
-	border: solid 2px #F660AB;
+	border: solid 2px #E2A76F;
 	position: fixed;
 	top: 30px;
 	bottom: 90px;
@@ -32,7 +51,7 @@ body
 
 #chat-log ul li.them-line
 {
-	background-color: #F660AB;
+	background-color: #FAEBD7;
 }
 
 form
@@ -45,7 +64,10 @@ form
 	padding: 8;
 	height: 30px;
 }
-
+#chat-form
+{
+	border: none;
+}
 form #chat-input
 {
 	border: solid 2px #E2A76F;
@@ -58,12 +80,11 @@ form #chat-input
 	background-image: url("http://orig03.deviantart.net/ec57/f/2013/148/7/0/sailor_moon_crystal_brooch_icon_by_meinona-d66vo9z.gif");
 	background-repeat: repeat-y;
 	float: right;
-	height: 70px;
-	width: 70px;
-}
-.box
-{
-	width: 80px;
+	height: 50px;
+	width: 50px;
+	background-color: #FAEBD7;
+	border: none;
+	opacity: 20;
 }
 
 form button
