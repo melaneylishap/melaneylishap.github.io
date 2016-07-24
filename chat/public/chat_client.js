@@ -2,6 +2,32 @@ $(document).ready(function(){
 
 	var socket = io();
 
+	function dayToNight() {
+		$("body").removeClass("day").addClass("night")
+	}
+	function nightToDay() {
+		$("body").removeClass("night").addClass("day")
+	}
+
+	
+	function timeCheck() {
+		var time = new Date();
+		var hours = time.getHours();
+		return hours >18 || hours < 6;
+
+
+	} 
+
+	window.setInterval(function() {
+		var isNight = timeCheck();
+		if (isNight){
+			dayToNight()
+		}else{
+			nightToDay()
+		}
+	}, 1000);
+
+
 	$("#chat-start").click(function(){
 		$.ajax({
 			url: "get_archive",
@@ -32,6 +58,11 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$("#submit-chat").click(function(){
+		console.log("hi world");
+		$("#chat-form").submit();
+	});
+
 	socket.on('chat message', function(msg){
 		if(msg.username ==$("#chat-name").val())
 		{
@@ -44,16 +75,3 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
-	var d = new Date();
-	var n = d.getHours();
-	if (n > 19 || n < 6)
-	  // If time is after 7PM or before 6AM, apply night theme to ‘body’
-	  document.body.className = "night";
-	else if (n > 16 && n < 19)
-	  // If time is between 4PM – 7PM sunset theme to ‘body’
-	  document.body.className = "sunset";
-	else
-	  // Else use ‘day’ theme
-	  document.body.className = "day";
-});

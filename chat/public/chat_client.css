@@ -1,27 +1,12 @@
 body
-/*reset*/ h1,h4 {margin:0;}
-
-/* basic styles */
-h1 { margin-bottom: 10px; }
-div { 
-  width: 680px;
-  padding: 10px 25px;
-  margin: 50px auto;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.4); 
-  color: #1F1F1F;
-}
-
-/* backgrounds */
-.day { background: url('http://www.spaceweather.com/swpod2007/21oct07/holloway.gif'); }
-.sunset { background: url('http://www.spaceweather.com/swpod2007/21oct07/holloway.gif'); }
-.night { background: url('http://www.spaceweather.com/swpod2007/21oct07/holloway.gif'); }
-
 
 {
 	font: 13px;
-	font-family: helvetica;, Arial, sans-serif;
-	background-color: #FAEBD7;
+	font-family: cursive, Arial, sans-serif;
+}
+.chat-meta
+{
+	color: #9AB6DB;
 }
 
 #chat-log
@@ -30,8 +15,8 @@ div {
 	margin: 5px;
 	border: solid 2px #E2A76F;
 	position: fixed;
-	top: 30px;
-	bottom: 90px;
+	top: 50px;
+	bottom: 85px;
 	width: 95%;
 	overflow-y: scroll;
 }
@@ -53,27 +38,30 @@ div {
 {
 	background-color: #FAEBD7;
 }
-
 form
 {
-	background-color: #FAEBD7;
+	background-color: #FFABCA;
 	position: fixed;
 	bottom: 5px;
-	left: 5px;
-	right: 2px;
-	padding: 8;
+	left: 13px;
+	right: 25px;
+	padding: 0px;
 	height: 30px;
 }
+
 #chat-form
 {
 	border: none;
+	
 }
+
 form #chat-input
 {
 	border: solid 2px #E2A76F;
 	padding: 10px;
 	width: 85%;
 	margin-right: .5%;
+	background-color: #FFF5EE;
 }
 
 .box{
@@ -82,9 +70,17 @@ form #chat-input
 	float: right;
 	height: 50px;
 	width: 50px;
-	background-color: #FAEBD7;
 	border: none;
 	opacity: 20;
+	cursor: pointer;
+}
+
+.day {
+	background-color: #FFABCA;
+}
+
+.night {
+	background-color: #2A384A;
 }
 
 form button
